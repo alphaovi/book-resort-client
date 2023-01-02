@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1201,
+        "name": "Simple Way Of Piece Life",
+        "author": "Armor Ramsey",
+        "previousPrice": 200,
+        "price": 150,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perspiciatis cumque, soluta ipsum et exercitationem repudiandae? Architecto hic, neque possimus facilis fuga fugiat eum ullam sint cum amet libero doloremque!",
+        "img": "https://i.ibb.co/1JRj8ct/product-item1.jpg"
+    },
+    {
+        "id": 5102,
+        "name": "Great Travel At Desert",
+        "author": "Sancliet Howdy",
+        "previousPrice": 200,
+        "price": 180,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perspiciatis cumque, soluta ipsum et exercitationem repudiandae? Architecto hic, neque possimus facilis fuga fugiat eum ullam sint cum amet libero doloremque!",
+        "img": "https://i.ibb.co/dMnL4Tk/product-item2.jpg"
+    },
+    {
+        "id": 54013,
+        "name": "The Lady Beauty Scarlett",
+        "author": "Arthur Dayle",
+        "previousPrice": 208,
+        "price": 107,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perspiciatis cumque, soluta ipsum et exercitationem repudiandae? Architecto hic, neque possimus facilis fuga fugiat eum ullam sint cum amet libero doloremque!",
+        "img": "https://i.ibb.co/dDbV5c4/product-item3.jpg"
+    },
+    {
+        "id": 900364,
+        "name": "Once Upon A Time",
+        "author": "Klien Marry",
+        "previousPrice": 210,
+        "price": 104,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perspiciatis cumque, soluta ipsum et exercitationem repudiandae? Architecto hic, neque possimus facilis fuga fugiat eum ullam sint cum amet libero doloremque!",
+        "img": "https://i.ibb.co/6sQ7thP/product-item4.jpg"
+    },
+    {
+        "id": 5415,
+        "name": "Way Of Happiness",
+        "author": "Ananda Kumar",
+        "previousPrice": 200,
+        "price": 140,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perspiciatis cumque, soluta ipsum et exercitationem repudiandae? Architecto hic, neque possimus facilis fuga fugiat eum ullam sint cum amet libero doloremque!",
+        "img": "https://i.ibb.co/sWT2Ftd/product-item5.jpg"
+    },
+    {
+        "id": 2516,
+        "name": "Life Of Seacrils",
+        "author": "Galista Marie",
+        "previousPrice": 1200,
+        "price": 1100,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perspiciatis cumque, soluta ipsum et exercitationem repudiandae? Architecto hic, neque possimus facilis fuga fugiat eum ullam sint cum amet libero doloremque!",
+        "img": "https://i.ibb.co/8DWtCsj/product-item6.jpg"
+    },
+    {
+        "id": 147,
+        "name": "Fashion System",
+        "author": "Kevin Spear",
+        "previousPrice": 1600,
+        "price": 1500,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perspiciatis cumque, soluta ipsum et exercitationem repudiandae? Architecto hic, neque possimus facilis fuga fugiat eum ullam sint cum amet libero doloremque!",
+        "img": "https://i.ibb.co/5jR87s3/product-item7.jpg"
+    },
+    {
+        "id": 158,
+        "name": "Musical",
+        "author": "Karim Achard",
+        "previousPrice": 1060,
+        "price": 1050,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam perspiciatis cumque, soluta ipsum et exercitationem repudiandae? Architecto hic, neque possimus facilis fuga fugiat eum ullam sint cum amet libero doloremque!",
+        "img": "https://i.ibb.co/48J55Cw/product-item8.jpg"
+    }
+]

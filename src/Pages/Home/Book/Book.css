@@ -1,0 +1,14 @@
+.book-container{
+    border: 1px solid rgb(238, 230, 230);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.book-name{
+    color: #7B6C3A;
+}
+
+.price{
+    color: #b68f10;
+}

@@ -1,0 +1,43 @@
+.bestBook-style {
+    margin: 40px;
+    padding: 60px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bestBook-image img {
+    height: 400px;
+}
+
+.bestBook-details {
+    margin-top: 60px;
+    text-align: start;
+
+}
+
+.bestBook-details h1 {
+    margin-bottom: 45px;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#bestBook-price {
+    font-size: 25px;
+}
+
+.bestBook-fontStyle {
+    font-size: 16px;
+    line-height: 2;
+    color: gray;
+    margin-top: 20px;
+
+}
+
+.bestBook-details h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+
+}

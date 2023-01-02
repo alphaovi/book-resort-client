@@ -1,0 +1,25 @@
+.Subscribe-container {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 200px;
+}
+
+.Subscribe-title {
+    margin-top:20px;
+    font-size: 65px;
+    font-weight: 600;
+    
+}
+
+.subscripe-letter{
+    color: rgb(78, 56, 56);
+    font-size: 20px;
+}
+
+.subscribe-mail{
+    font-weight: 700;
+    padding: 0;
+    border: none;
+    background: none;
+}
