@@ -13,7 +13,7 @@ const PopularBooks = () => {
     }, [])
     return (
         <div>
-            <div>
+            <div id="popular-books">
                 <p className="quality-item-text">SOME QUALITY ITEMS</p>
                 <h3 className="books-heading">Popular Books</h3>
             </div>

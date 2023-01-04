@@ -12,7 +12,7 @@ const Books = () => {
             })
     }, [])
     return (
-        <div>
+        <div id="featured-books">
             <p className="quality-item-text">SOME QUALITY BOOKS</p>
             <h1 className="books-heading">Featured Books</h1>
             <div className="books-list">

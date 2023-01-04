@@ -15,7 +15,7 @@ const BestSellingBook = () => {
             <div className="bestBook-image">
                 <img src={bestSellingBook.img} alt="" />
             </div>
-            <div className="bestBook-details">
+            <div id="best-selling" className="bestBook-details">
                 <h1>Best Selling <span> <br /> Book</span></h1>
 
                 <p className="bestBook-fontStyle">By {bestSellingBook.author}</p>

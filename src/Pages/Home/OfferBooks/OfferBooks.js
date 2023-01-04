@@ -6,7 +6,7 @@ const OfferBooks = () => {
     const { books, setBooks } = useBooksList();
     return (
         <div>
-            <div>
+            <div id="offer-books">
                 <p className="quality-item-text">GRAB YOUR OPPORTUNITY</p>
                 <h2 className="books-heading">Books With Offer</h2>
             </div>

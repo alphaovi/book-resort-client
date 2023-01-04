@@ -1,19 +1,40 @@
-.quality-item-text{
+.quality-item-text {
     margin-top: 20px;
     font-size: 15px;
     color: gray;
 }
 
-.books-heading{
+.books-heading {
     font-size: 52px;
     color: #2F2F2F;
     font-family: "Times New Roman", Times, serif;
 }
 
-.books-list{
+.books-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
     border: 1px solid #F3F2EC;
 }
 
+@media only screen and (min-width: 375px) and (max-width: 815px) {
+    .books-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+    }
+}
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+    .books-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+    }
+}
+@media only screen and (min-width: 816px) and (max-width: 1180px) {
+    .books-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+}
