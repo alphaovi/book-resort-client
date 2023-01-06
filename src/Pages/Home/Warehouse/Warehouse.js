@@ -38,7 +38,7 @@ const Warehouse = () => {
                         <tbody>
                             <tr>
                                 <td>{book.name}</td>
-                                <td>{book.author}}</td>
+                                <td>{book.author}</td>
                                 <td>{book.price}</td>
                                 <td><button onClick={() => handleDelete(book._id)}>X</button></td>
                             </tr>
