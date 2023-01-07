@@ -26,7 +26,6 @@ const Header = () => {
                         {
                             user && <>
                                 <Nav.Link as={Link} to="orders">Orders</Nav.Link>
-                                <Nav.Link as={Link} to="checkout">Checkout</Nav.Link>
                                 <Nav.Link as={Link} to="addbook">Add Book</Nav.Link>
                             </>
                         }

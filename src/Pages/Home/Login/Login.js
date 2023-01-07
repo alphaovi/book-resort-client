@@ -37,7 +37,7 @@ const Login = () => {
         )
     }
     if (googleUser) {
-        navigate("/orders")
+        navigate(from ,{replace: true})
     }
 
     if (googleError) {

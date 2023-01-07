@@ -4,11 +4,25 @@ import "./Books.css";
 
 const Books = () => {
     const [books, setBooks] = useState([]);
+    const [pageCount, setPageCount] = useState(0);
+
+
     useEffect(() => {
         fetch("http://localhost:5002/book")
             .then(res => res.json())
             .then(data => {
                 setBooks(data)
+            })
+    }, []);
+
+    useEffect(() => {
+        const url = `http://localhost:5002/bookcount`;
+        fetch(url)
+            .then((res => res.json))
+            .then(data => {
+                const count = data.count;
+                const pages = Math.ceil(count / 10)
+                setPageCount(pages);
             })
     }, [])
     return (
@@ -18,11 +32,16 @@ const Books = () => {
             <div className="books-list">
                 {
                     books.map(book => <Book
-                        key={books.id}
+                        key={book._id}
                         book={book}
                     ></Book>)
                 }
             </div>
+            {/* <div>
+                {
+                    [...Array(pageCount).keys()].map(number => <button>{number}</button>)
+                }
+            </div> */}
         </div>
     );
 };

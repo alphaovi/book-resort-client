@@ -9,10 +9,10 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Warehouse from './Pages/Home/Warehouse/Warehouse';
 import Orders from './Pages/Home/Orders/Orders';
 import RequireAuth from './Pages/Home/RequireAuth/RequireAuth';
-import Checkout from './Pages/Home/Checkout/Checkout';
 import BookDetail from './Pages/Home/BookDetail/BookDetail';
 import ConfirmBuy from './Pages/Home/ConfirmBuy/ConfirmBuy';
 import AddBook from "./Pages/AddBook/AddBook"
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -42,23 +42,19 @@ function App() {
           </RequireAuth>
         }></Route>
 
-        <Route path="/checkout" element={
-          <RequireAuth>
-            <Checkout></Checkout>
-          </RequireAuth>
-        }></Route>
-
-        <Route path="/confirm" element={
+        <Route path="/confirm/:bookId" element={
           <RequireAuth>
             <ConfirmBuy></ConfirmBuy>
           </RequireAuth>
         }></Route>
+        
 
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

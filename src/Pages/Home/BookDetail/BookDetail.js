@@ -1,35 +1,40 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
+import useBookDetail from '../../Hooks/useBookDetail';
 import "./BookDetail.css";
 
 
 const BookDetail = () => {
     const { bookId } = useParams();
-    const [book, setBook] = useState({});
+    const [books, setBooks] = useState({});
+    const {book} = useBookDetail(bookId);
+
+
     useEffect(() => {
         const url = `http://localhost:5002/book/${bookId}`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setBook(data))
-    }, [])
+            .then(data => setBooks(data))
+    }, []);
+
     const navigate = useNavigate();
 
     const navigateToConfirmBuy = () => {
-        navigate("/confirm")
+        navigate(`/confirm/${bookId}`)
     }
     return (
-        <div>
-            <h3></h3>
-
+        <div className="books-detail-container">
+           
             <Card>
-                <Card.Header>You order: {book.name}</Card.Header>
+                <Card.Header>You Choose: {books.name}</Card.Header>
                 <Card.Body>
-                    <Card.Title>{book.author}</Card.Title>
+                    <Card.Title>By: {books.author}</Card.Title>
                     <Card.Text>
-                        <img src={book.img} alt="" />
+                        <img src={books.img} alt="" />
                     </Card.Text>
-                    <Button onClick={navigateToConfirmBuy} variant="primary">Checkout</Button>
+                    <p className="book-description">{books.description}</p>
+                    <Button onClick={() =>navigateToConfirmBuy(bookId)} variant="primary">Buy Now</Button>
                 </Card.Body>
             </Card>
         </div>

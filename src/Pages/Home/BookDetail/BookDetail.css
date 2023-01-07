@@ -1,0 +1,13 @@
+.books-detail-container{
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.book-description{
+    width: 50%;
+    text-align: left;
+    margin-left: 25%
+}

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {useNavigate } from 'react-router-dom';
 import "./Book.css";
 const Book = ({ book }) => {
     const {_id, name, author, img, price } = book;
     const navigate = useNavigate();
 
+    
     const navigateToBookDetail = (id) => {
         navigate(`/book/${id}`)
     }
@@ -14,7 +15,7 @@ const Book = ({ book }) => {
             <h2 className="book-name">{name}</h2>
             <p><small>{author}</small></p>
             <h3 className="price">$ {price}</h3>
-            <button onClick={() => navigateToBookDetail(_id)} className="btn btn-secondary">Buy Now</button>
+            <button onClick={() => navigateToBookDetail(_id)} className="btn btn-secondary">Add Cart</button>
         </div>
     );
 };
