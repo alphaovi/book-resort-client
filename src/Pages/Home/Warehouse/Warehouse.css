@@ -6,4 +6,11 @@
 
 }
 
+.full-warehouse{
+    display: flex;
+}
+
+.warehouse-product{
+    margin-left: 25%
+}
 /* style={{border: "1px solid gray", padding: "10px", margin: "10px", borderRadius:"10px"}} */
