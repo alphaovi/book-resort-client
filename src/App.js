@@ -13,11 +13,14 @@ import BookDetail from './Pages/Home/BookDetail/BookDetail';
 import ConfirmBuy from './Pages/Home/ConfirmBuy/ConfirmBuy';
 import AddBook from "./Pages/AddBook/AddBook"
 import { ToastContainer } from 'react-toastify';
+import Admin from './Pages/Admin/Admin';
+
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
+      
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/shop" element={<Home></Home>}></Route>
@@ -47,12 +50,18 @@ function App() {
             <ConfirmBuy></ConfirmBuy>
           </RequireAuth>
         }></Route>
+        <Route path="/admin" element={
+          <RequireAuth>
+            <Admin></Admin>
+          </RequireAuth>
+        }></Route>
         
 
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      
       <Footer></Footer>
       <ToastContainer></ToastContainer>
     </div>
