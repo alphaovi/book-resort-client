@@ -65,7 +65,7 @@ const Login = () => {
         const password = passwordRef.current.value;
         console.log(email, password);
         await signInWithEmailAndPassword(email, password);
-        const { data } = await axios.post("http://localhost:5002/login", { email })
+        const { data } = await axios.post("http://localhost:5000/login", { email })
         console.log(data);
         localStorage.setItem("accessToken", data.accessToken);
         navigate(from, { replace: true })

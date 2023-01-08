@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
 import useBookDetail from '../../Hooks/useBookDetail';
@@ -15,6 +15,8 @@ const ConfirmBuy = () => {
     const [user] = useAuthState(auth);
     console.log(user);
 
+    const navigate = useNavigate()
+
     const handlePlaceOrder = (event) => {
         event.preventDefault();
         const order = {
@@ -25,7 +27,7 @@ const ConfirmBuy = () => {
             phone: event.target.phone.value
         };
 
-        axios.post("http://localhost:5002/order", order)
+        axios.post("http://localhost:5000/order", order)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {
@@ -33,6 +35,10 @@ const ConfirmBuy = () => {
                     event.target.reset();
                 }
             })
+    }
+
+    const navigateToOrder = () => {
+        navigate("/orders")
     }
 
     return (
@@ -57,7 +63,7 @@ const ConfirmBuy = () => {
                     <br />
                     <input className="w-100 mt-2" type="text" name="phone" placeholder="Phone" />
                     <br />
-                    <input className="btn btn-primary w-50 mt-2" type="submit" value="Place Order" />
+                    <input onClick={navigateToOrder} className="btn btn-primary w-50 mt-2" type="submit" value="Place Order" />
                 </form>
                 <ToastContainer></ToastContainer>
             </div>

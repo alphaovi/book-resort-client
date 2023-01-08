@@ -5,7 +5,7 @@ const AddBook = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = "http://localhost:5002/book";
+        const url = "http://localhost:5000/book";
         fetch(url, {
             method: 'POST',
             headers: {

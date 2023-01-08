@@ -12,7 +12,7 @@ const BookDetail = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5002/book/${bookId}`;
+        const url = `http://localhost:5000/book/${bookId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setBooks(data))
