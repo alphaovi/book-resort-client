@@ -12,7 +12,7 @@ const BookDetail = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/book/${bookId}`;
+        const url = `https://booksaw-server.vercel.app/book/${bookId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setBooks(data))
