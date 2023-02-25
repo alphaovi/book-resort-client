@@ -65,7 +65,7 @@ const Login = () => {
         const password = passwordRef.current.value;
         console.log(email, password);
         await signInWithEmailAndPassword(email, password);
-        const { data } = await axios.post("https://booksaw-server.vercel.app/login", { email })
+        const { data } = await axios.post("https://booksaw.vercel.app/login", { email })
         console.log(data);
         localStorage.setItem("accessToken", data.accessToken);
         navigate(from, { replace: true })
@@ -77,7 +77,7 @@ const Login = () => {
             <MDBRow>
 
                 <MDBCol col='10' md='6'>
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" className="img-fluid" alt="Sample image" />
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" className="img-fluid" alt="" />
                 </MDBCol>
 
                 <MDBCol col='4' md='6'>

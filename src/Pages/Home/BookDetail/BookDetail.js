@@ -16,7 +16,7 @@ const BookDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setBooks(data))
-    }, []);
+    }, [bookId]);
 
     const navigate = useNavigate();
 

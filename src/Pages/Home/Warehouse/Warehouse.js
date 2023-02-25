@@ -9,7 +9,7 @@ const Warehouse = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm("Are you sure?");
         if (proceed) {
-            const url = `https://booksaw-server.vercel.app/book/${id}`;
+            const url = `https://booksaw.vercel.app/book/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

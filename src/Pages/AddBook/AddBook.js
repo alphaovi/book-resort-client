@@ -5,7 +5,7 @@ const AddBook = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = "https://booksaw-server.vercel.app/book";
+        const url = "https://booksaw.vercel.app/book";
         fetch(url, {
             method: 'POST',
             headers: {

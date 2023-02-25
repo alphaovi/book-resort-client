@@ -27,7 +27,7 @@ const ConfirmBuy = () => {
             phone: event.target.phone.value
         };
 
-        axios.post("https://booksaw-server.vercel.app/order", order)
+        axios.post("http://localhost:5000/order", order)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

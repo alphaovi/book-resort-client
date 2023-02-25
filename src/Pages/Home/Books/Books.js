@@ -8,7 +8,7 @@ const Books = () => {
 
 
     useEffect(() => {
-        fetch("https://booksaw-server.vercel.app/book")
+        fetch("http://localhost:5000/book")
             .then(res => res.json())
             .then(data => {
                 setBooks(data)
@@ -16,7 +16,7 @@ const Books = () => {
     }, []);
 
     useEffect(() => {
-        const url = `https://booksaw-server.vercel.app/bookcount`;
+        const url = `http://localhost:5000/bookcount`;
         fetch(url)
             .then((res => res.json))
             .then(data => {
